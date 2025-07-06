@@ -85,41 +85,5 @@ Handles chat history to support:
 
 ## 🗺️ System Architecture 
 
-flowchart TD
+![image](https://github.com/user-attachments/assets/7f785a27-c8a2-4e86-a140-d1d5c020c032)
 
-%% Input Section
-A[🧑 User Input: Natural Language Query] --> B[🧠 Rephrasing Chain<br>RunnableWithMessageHistory]
-B --> C[📜 Rephrased Query]
-
-%% Product Filtering Section
-C --> D[🔍 LangChain Prompt: Generate Pandas Query]
-D --> E[🤖 Groq + LLaMA-3.3-70B]
-E --> F[🧾 Pandas Query (as string)]
-
-F --> G[📊 Execute on products_dataframe]
-G --> H[📦 Filtered Product Table]
-
-%% Product Recommendation Section
-H --> I[📝 LangChain Prompt: Recommend Products]
-I --> J[🤖 Groq + LLaMA-3.3-70B]
-J --> K[🎯 Recommendation Output (Markdown)]
-
-%% Output Display
-K --> L[📺 Display via Rich Markdown Console]
-
-%% Memory Storage
-B --> M[(🧠 SQLite Chat History)]
-M --> B
-M --> B1[📚 Retrieve Context for Follow-up Queries]
-
-%% Final User Experience
-L --> Z[💬 Conversational Loop Continues]
-
-%% Optional: Empty Table Case
-G --> G1{Empty Table?}
-G1 -- Yes --> G2[🔁 Return Full Dataset for Fallback]
-G1 -- No --> H
-
-%% Styling
-classDef block fill:#f9f,stroke:#333,stroke-width:1px;
-class B,D,I,M,G1 block
