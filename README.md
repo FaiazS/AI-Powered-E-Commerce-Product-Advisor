@@ -93,8 +93,6 @@ Handles chat history to support:
 ---
 
 Faiaz Ahmed
-Seller Partner Support Associate @ Amazon
-Aspiring AI Engineer | E-Commerce Innovator
 
 ---
 
