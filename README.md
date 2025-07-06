@@ -87,3 +87,14 @@ Handles chat history to support:
 
 ![image](https://github.com/user-attachments/assets/7f785a27-c8a2-4e86-a140-d1d5c020c032)
 
+---
+
+🧠 Author
+Faiaz Ahmed
+Seller Partner Support Associate @ Amazon
+Aspiring AI Engineer | E-Commerce Innovator
+
+---
+
+🌟 Star This Repo
+If this helped you learn LangChain + Groq + conversational AI, please give it a ⭐!
