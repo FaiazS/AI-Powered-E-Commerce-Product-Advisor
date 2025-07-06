@@ -90,6 +90,8 @@ Handles chat history to support:
 ---
 
 🧠 Author
+---
+
 Faiaz Ahmed
 Seller Partner Support Associate @ Amazon
 Aspiring AI Engineer | E-Commerce Innovator
